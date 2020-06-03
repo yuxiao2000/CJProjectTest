@@ -1,0 +1,66 @@
+*{
+    /*外边距 内边距 上右下左*/
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(244,244,246);
+    padding-top:44px;
+}
+footer{
+    display: table;
+    width: 100%;
+    background: black;
+    height: 49px;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+}
+footer a{
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    vertical-align: middle; /*竖直居中*/
+    text-decoration: none; /*a标签的下划线去掉*/
+}
+footer a span{
+    display: block;
+    color: white;
+    font-size: 12px;
+}
+footer a image{
+    width: 20px;
+}
+header{
+    color: white;
+    line-height: 44px;
+    font-size: 18px;
+    background: rgb(40,133,202);
+    text-align: center;
+    width: 100%;
+    left: 0;/*定位（0,0）*/
+    top: 0;
+    position: fixed;/*固定位置*/
+    z-index: 999;/*层次*/
+}
+.DS_second_section img{
+    width: 100%;
+}
+.DS_first_ul{
+    margin-top: -6px;
+}
+.DS_title{
+    margin: 15px;
+    background: rgb(244,244,246);
+    left: 0;
+
+}
+.DS_title a {
+    text-align: center;
+    text-decoration: none; /*a标签的下划线去掉*/
+}
+.DS_title a span{
+    margin-right: 33px;
+    font-size: 18px;
+    color: black;
+}

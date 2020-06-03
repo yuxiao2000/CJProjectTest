@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--ctrl+/-->
+<!--标签分类：块级标签-独立成行（ul）；内联标签-跟在后面(span)-->
+<html lang="en">
+<head>
+    <!--适配content=宽度保持一致，高度100%，用户缩放为no-->
+    <meta charset="UTF-8" name="viewport" content="width=device-width,inital-scale=1,user-scalable=no" >
+    <title>081417157余笑</title>
+    <!--用来加载外部资源 short icon;小图标；stylesheet:用css-->
+    <link rel="short icon" href="Resource/Resource/icon.png"></link>
+    <link rel="stylesheet" href="ExternalStyle.css"></head>
+
+    <!--外部样式-->
+    <style>
+        /*成行标签display:table; width: 一个需求值；*/
+        ul{
+            display:table;
+            width: 100%;
+            background: white;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        /*成列标签display: table-cell;width: 一个需求的值;*/
+        ul li{
+            display: table-cell;
+            width: 33.3%;
+            text-align: center;
+            vertical-align: middle; /*竖直居中*/
+        }
+        ul li span{
+            display: block; /*文字自占一行*/
+        }
+
+
+    </style>
+</head>
+<body>
+    <!--第一部分：span文字较少的标签-->
+    <!--语义标签：主要目的增强程序的可读性<header>、<section>、<footer>-->
+    <header>
+    <span>小滴服务</span>
+    </header>
+
+
+    <!--第二部分-->
+    <section class="DS_second_section">
+    <img id="bannerImg" src="Resource/Resource/banner-1.png" alt="Hello"></img>
+        <script>
+            var imgNum=1;
+            var bannerImg=document.getElementById("bannerImg");
+            function changeImg(){
+                imgNum++;
+                if(imgNum>3){
+                    imgNum=1;
+                }
+                bannerImg.src="Resource/Resource/banner-"+imgNum+".png";
+            }
+            setInterval(changeImg,2000);
+        </script>
+    </section>
+
+    <!--第三部分：ul理解成一行，li理解成一列-->
+    <section>
+    <ul class="DS_first_ul">
+        <li><image src="Resource/Resource/index1.png"></image> <span>企业项目</span></li>
+        <li><image src="Resource/Resource/index2.png"></image> <span>平台风采</span></li>
+        <li><image src="Resource/Resource/index3.png"></image> <span>报名流程</span></li>
+    </ul>
+    <ul>
+        <li><image src="Resource/Resource/index4.png"></image> <span>客户管理</span></li>
+        <li><image src="Resource/Resource/index5.png"></image> <span>账务管理</span></li>
+        <li><image src="Resource/Resource/index6.png"></image> <span>新闻公告</span></li>
+    </ul>
+    <ul>
+        <li><image src="Resource/Resource/index7.png"></image> <span>工程案例</span></li>
+        <li><image src="Resource/Resource/index8.png"></image> <span>修改密码</span></li>
+        <li><image src="Resource/Resource/index9.png"></image> <span>会员注册</span></li>
+    </ul>
+    </section>
+
+    <!--第四部分-->
+    <footer>
+        <a href="Droplet%20Service.html"><image src="Resource/Resource/nav11.png"></image> <span style="color: red">小滴服务</span></a>
+        <a href="EnterpriseProgram.html"><image src="Resource/Resource/nav20.png"></image> <span>企业项目</span></a>
+        <a href="ServiceProcedure.html"><image src="Resource/Resource/nav30.png"></image> <span>服务流程</span></a>
+        <a href="PlatformMien.html"><image src="Resource/Resource/nav40.png"></image> <span>平台风采</span></a>
+        <a href="MyDroplet.html"><image src="Resource/Resource/nav50.png"></image> <span>我的小滴</span></a>
+    </footer>
+
+</body>
+</html>
